@@ -17,14 +17,19 @@ html {
 } 
 
 html{
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Creepster', cursive;
 }
 
 body {
 	padding-top: 50px;
 /*	padding-bottom: 20px;*/
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Creepster', cursive;
 	font-size: 22px;
+}
+
+.jumbotron{
+  position: relative;
+  margin-bottom: 0px;
 }
 
 a.navbar-brand.logo {
@@ -39,7 +44,7 @@ a.navbar-brand.logo {
 
 .backdrop{
 	max-width: 100%;
-	min-height: 650px;
+	min-height: 620px;
   	background: url(../images/artist.jpg) no-repeat top center #131e27;
   /*	background-size: cover;
   	border: 1px solid black;*/
@@ -62,14 +67,41 @@ a.navbar-brand.logo {
   text-align: center;
   padding-top: 60px;
   font-size: 38px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Creepster', cursive;
   color: white;
+  letter-spacing: 2.5px;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+#thumbnail:hover{
+  opacity: 0.91;
+}
+
+.pushme{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 5em;
+  background-image: url(../svg/si-glyph-arrow-thick-thin-down.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.4);
+  text-indent: -10em;
+  overflow: hidden;
+  border-radius: 3em 3em 0 0;
+  height: 2em;
+}
+
+.pushme:hover{
+  transform:translateY(5px);
 }
 
 .infodiv {
@@ -91,7 +123,8 @@ img {
   opacity: 0;
   transition: bottom 0.3s, opacity 0.3s;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Creepster', cursive;
+  letter-spacing: 1.8px;
   border-style: solid;
   border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
 }
@@ -111,15 +144,6 @@ li{
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-}
-
-.jumbotron {
-  margin-bottom: 0px;
-}
-
-
-.info {
 
 }
 
@@ -146,7 +170,7 @@ li{
   text-align: center;
   padding-top: 20px;
   font-size: 38px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Creepster', cursive;
 }
 
 .cta{
@@ -154,7 +178,7 @@ li{
   width: 40%;
   margin: 0 auto;
   padding-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Creepster', cursive;
 }
 
 .cta > a{
@@ -173,7 +197,7 @@ li{
 
 .mb-0 {
   font-size: 24px;
-  font-family: 'Ewert', cursive;
+  font-family: 'Creepster', cursive;
   padding: 5px;
 }
 
@@ -188,23 +212,27 @@ a:focus, a:hover {
 }
 
 .col-md-6 > h2{
-  font-family: 'Ewert', cursive;
+  font-family: 'Creepster', cursive;
   font-size: 50px;
   margin-top: -5px;
 }
 
 .card-body{
   padding-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
 
 .tothetop{
   background: rgba(255,255,255,0.6);
   display: block;
-  width: 5%;
+  width: 3em;
   height: 80px;
   border-radius: 3em 3em 0 0;
+}
+
+.tothetop:hover{
+  transform:translateY(-10px);
 }
 
 
@@ -216,7 +244,7 @@ a:focus, a:hover {
 }
 
 footer {
-  font-family: 'Ewert', cursive;
+  font-family: 'Creepster', cursive;
   font-size: 20px;
   background-color: #222;
   color: white;
@@ -291,20 +319,20 @@ button:hover {
   background-color:light-blue;
 }
 
-.mememe{
-  height: 200px;
-  width: 100%;
-  border-radius: 5px;
-  background-color: rgba(255,255,255, 0.5);
-  margin-top: 20px;
-  font-family: 'Open Sans', sans-serif;
+.bottompage2{
+  max-width: 100%;
+  min-height: 610px;
+    background: url(../images/artist4.jpg) no-repeat top center #131e27;
+  /*  background-size: cover;
+    border: 1px solid black;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(30%);
 }
 
-.findme{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 

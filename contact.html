@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ewert" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ewert|Creepster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>	
@@ -47,13 +47,16 @@
 	    <!-- start of main stuff -->  
 		
 		<div id="section1" class="jumbotron toppage">
-	       </div>
+			<div>
+				<button class="pushme" onclick="scrollTo('2')">hello</button>
+			</div>  
+	    </div>
 
 	    <br>
 
 		<!-- start of main body -->
-		<!-- <div class="jumbotron"> -->
-	        <div class="container">
+
+	        <div id="section2" class="container">
 				<form method="post" action="process.php">
 					<h2> Please fill in the form below </h2>
 					<br>
@@ -69,19 +72,15 @@
 			</div>	
 	<br>
 
-		<div class="container">
-			<div class="mememe">
-				<ul>
-				  <li>Address</li>
-				  <li>Tel</li>
-				  <li>Email</li>
-				</ul>
-			</div>	
-		</div> <!-- end of container -->
+		<div id="section3" class="jumbotron bottompage2">
+			<div>
+				<button class="pushme" onclick="scrollTo('4')"></button>
+			</div>   
+	    </div>
 
 	<br>
 
-		<div id="section3" class="container">
+		<div id="section4" class="container">
 			<div id="map"></div>
 				<button id="goHome" class="tothetop" onclick="scrollTo('1')"><img src="svg/si-glyph-arrow-thin-up.svg"/></button>
 		</div>
@@ -96,8 +95,7 @@
 	          	<ul>
 	        		<li><a href="#"><img src="images/Instagram.png" alt="Insta logo"></a></li>
 	        		<li><a href="#"><img src="images/Facebook.png" alt="Facebook logo"></a></li>
-      			</ul>
-      		<p>Toby Yau</p>		
+      			</ul>	
 	    </div>    
     </footer>  
 
