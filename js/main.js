@@ -1,7 +1,7 @@
 var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2093},
+          center: {lat: -33.909018, lng: 151.179694},
           zoom: 15
         });
       }
@@ -42,6 +42,27 @@ $(window).on( 'scroll', function(){
     $("#goHome").fadeOut(1000);
   }
 });
+
+// scream on hover
+
+var beepOne = $("#beep-one")[0];
+$("#rimshot-hover-sound").mouseenter(function() {
+    beepOne.play();
+  });
+
+var rimShotAudio = document.getElementById("beep-one");
+
+// item.addEventListener('mouseover', rimShotAudio.playRim, false);
+
+var beepTwo = $("#beep-two")[0];
+$("#rimshot-hover-sound-two").mouseenter(function() {
+    beepTwo.play();
+  });
+
+var rimShotAudioTwo = document.getElementById("beep-two");
+
+// item.addEventListener('mouseover', rimShotAudioTwo.playRim, false);
+
 
 
 

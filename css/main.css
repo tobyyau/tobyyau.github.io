@@ -30,6 +30,7 @@ body {
 .jumbotron{
   position: relative;
   margin-bottom: 0px;
+  overflow: hidden;
 }
 
 a.navbar-brand.logo {
@@ -52,6 +53,7 @@ a.navbar-brand.logo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .intro{
@@ -72,6 +74,11 @@ a.navbar-brand.logo {
   letter-spacing: 2.5px;
 }
 
+.intro p:hover{
+  color: rgba(255,51,51,0.8);
+  transform:scale(2,1.6);
+}
+
 img {
     width: 100%;
     height: auto;
@@ -79,6 +86,7 @@ img {
 }
 
 #thumbnail:hover{
+  transform:scale(1.25,1.25);
   opacity: 0.91;
 }
 
@@ -93,15 +101,17 @@ img {
   background-image: url(../svg/si-glyph-arrow-thick-thin-down.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.5);
   text-indent: -10em;
   overflow: hidden;
   border-radius: 3em 3em 0 0;
-  height: 2em;
+  height: 2.5em;
+  transform: translate3d(0,0,0);
 }
 
 .pushme:hover{
   transform:translateY(5px);
+  background-color: rgba(255,51,51,0.6);
 }
 
 .infodiv {
@@ -203,11 +213,11 @@ li{
 
 a{
   color: white;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
 }
 
 a:focus, a:hover {
-    color: black;
+    color: #ff3333;
     text-decoration: none;
 }
 
@@ -227,8 +237,8 @@ a:focus, a:hover {
   background: rgba(255,255,255,0.6);
   display: block;
   width: 3em;
-  height: 80px;
-  border-radius: 3em 3em 0 0;
+  height: 70px;
+  border-radius: 3em 3em 3em 3em;
 }
 
 .tothetop:hover{
@@ -269,9 +279,11 @@ footer p {
   letter-spacing: 1.5px;
 }
 
+/*<!--- end of main page --->*/
 
-
-/*<!--- contact page --->*/
+/* ==========================================================================
+   contact page
+   ========================================================================== */
 
 .toppage{
   max-width: 100%;
@@ -283,6 +295,49 @@ footer p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.contactintro{
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.2);
+  margin-top: 150px;
+  border-style: solid;
+  border-color: rgba(250,255,255,0.7);
+  width: 60%;
+}
+
+.contactintro p{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 38px;
+  font-family: 'Creepster', cursive;
+  color: white;
+  letter-spacing: 2.5px;
+}
+
+.contactoutro{
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.2);
+  margin-top: 150px;
+  border-style: solid;
+  border-color: rgba(250,255,255,0.7);
+  width: 50%;
+}
+
+.contactoutro p{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 38px;
+  font-family: 'Creepster', cursive;
+  color: white;
+  letter-spacing: 2.5px;
+}
+
+.contactoutro p:hover{
+  transform: scale(2,1.5);
+  color: rgba(255,51,51,0.7);
 }
 
 
@@ -331,22 +386,9 @@ button:hover {
     background-size: cover;
     filter: grayscale(30%);
 }
-
-
-
-
-
-/*<!--- end of contact page --->*/
-
-
-
-
-
-
-
-
-
-
+/* ==========================================================================
+   end of contact page
+   ========================================================================== */
 
 /*==========  Mobile First Method  ==========*/
 
