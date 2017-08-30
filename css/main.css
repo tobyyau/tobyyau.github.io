@@ -83,11 +83,13 @@ img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s;
 }
 
 #thumbnail:hover{
   transform:scale(1.25,1.25);
   opacity: 0.91;
+  transition: transform 0.3s;
 }
 
 .pushme{
